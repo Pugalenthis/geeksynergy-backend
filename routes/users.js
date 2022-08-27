@@ -11,7 +11,7 @@ const router = express.Router();
 router.get("/", getUsers);
 
 //GET USERBYID
-router.get("/:id", getUser);
+router.get("/user/:id", getUser);
 
 //UPDATE USER
 router.put("/:id", updateUser);

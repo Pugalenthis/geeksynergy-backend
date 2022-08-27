@@ -45,6 +45,7 @@ export const getUser = async (req, res, next) => {
       phone: 1,
       profession: 1,
     });
+    console.log(user);
     res.status(200).json(user);
   } catch (err) {
     next(err);

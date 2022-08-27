@@ -9,7 +9,7 @@ const app = express();
 
 dotenv.config();
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: "http://localhost:8000", optionsSuccessStatus: 200,origin: true }));
 
 app.get("/", (req, res) => {
   res.send({ name: "Hello world" });
